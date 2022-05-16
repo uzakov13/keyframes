@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    border: 1px solid black;
+
+}
+
+@keyframes color{
+   0%{
+    background: linear-gradient(130deg , greenyellow);
+   }
+    20%{
+        background: linear-gradient(130deg , pink );
+    }
+
+    40%{
+        background-color: blueviolet;
+    }
+
+    60%{
+        background-color: chocolate;
+    }
+
+    80%{
+        background-color: aqua;
+    }
+
+    100%{
+        background-color: azure;
+    }
+}
+
+.box:hover{
+    animation: color;
+    animation-duration: .4s;
+    transition: .8s;
+}
